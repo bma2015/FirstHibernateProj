@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="connection.url">jdbc:postgresql://localhost:5432/hibernatedb</property>
+		<property name="connection.username">postgres</property>
+		<property name="connection.password">admin</property>
+
+		<!-- JDBC connection pool -->
+		<property name="connection.pool_size">1</property>
+
+		<!-- SQL Dialect -->
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+
+		<!-- Drop and re-create database schema on startup -->
+		<property name="hbm2ddl.auto">create</property>
+
+		<!-- Names the annotated Entity class -->
+		<mapping class="com.armedia.mvc.dto.User" />
+	</session-factory>
+</hibernate-configuration>
