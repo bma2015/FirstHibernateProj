@@ -27,6 +27,6 @@
 		<property name="hbm2ddl.auto">create</property>
 
 		<!-- Names the annotated Entity class -->
-		<mapping class="com.armedia.mvc.dto.User" />
+		<mapping class="com.armedia.mvc.dto.MyUser" />
 	</session-factory>
 </hibernate-configuration>
