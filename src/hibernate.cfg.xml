@@ -24,10 +24,10 @@
 		<property name="show_sql">true</property>
 
 		<!-- Drop and re-create database schema on startup -->
-<!-- 		<property name="hbm2ddl.auto">create</property> -->
+		<property name="hbm2ddl.auto">create</property>
 		
 		<!-- Do not Drop and re-create database schema on startup -->
-		<property name="hbm2ddl.auto">update</property>
+<!-- 		<property name="hbm2ddl.auto">update</property> -->
 
 		<!-- Names the annotated Entity class -->
 		<mapping class="com.armedia.mvc.dto.MyUser" />
