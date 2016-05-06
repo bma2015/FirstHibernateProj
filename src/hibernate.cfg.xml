@@ -25,11 +25,15 @@
 
 		<!-- Drop and re-create database schema on startup -->
 		<property name="hbm2ddl.auto">create</property>
-		
-		<!-- Do not Drop and re-create database schema on startup -->
-<!-- 		<property name="hbm2ddl.auto">update</property> -->
 
-		<!-- Names the annotated Entity class -->
+		<!-- Do not Drop and re-create database schema on startup -->
+		<!-- <property name="hbm2ddl.auto">update</property> -->
+
+		<!-- Names the annotated Entity classes -->
 		<mapping class="com.armedia.mvc.dto.MyUser" />
+		<mapping class="com.armedia.mvc.dto.Vehicle" />
+		<mapping class="com.armedia.mvc.dto.Permission" />
+		<mapping class="com.armedia.mvc.dto.TwoWheeler" />
+		<mapping class="com.armedia.mvc.dto.FourWheeler" />
 	</session-factory>
 </hibernate-configuration>
